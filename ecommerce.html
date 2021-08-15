@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weverse shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ecommerce.css">
+</head>
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-light bgnav py-2">
+        <div class="container ">
+          <a class="navbar-brand " href="#">
+            <img id="navimg" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top bg-light">
+            Weverse Shop
+          </a>
+        </div>
+      </nav>
+     <!--  <img class="container d-flex  justify-content-center" src="https://tse1.mm.bing.net/th?id=OIP.wbUzfCfuMwyXQ4egLoL0jAAAAA&pid=Api&P=0&w=360&h=166" style="height:50vh;width:100%"> -->
+ <!--cards-->
+    <div class="container d-flex flex-wrap py-4  " style="margin-top: 10vh;margin-left: 15%;">
+        <div class="card d-flex  justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/koya.gif"  class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">Koya - &#8377;100</p>
+              
+              <button id="rzp-button1" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+        <div class="card d-flex justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/rj.gif"  class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">RJ - &#8377;150</p>
+              
+              <button id="rzp-button2" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+        <div class="card d-flex justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/shooky.gif"  class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">Shooky - &#8377;100</p>
+              
+              <button id="rzp-button3" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+        <div class="card d-flex justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/mang.gif"  class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">Mang - &#8377;150</p>
+              
+              <button id="rzp-button4" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+        <div class="card d-flex justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/chimmy.gif"  class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">Chimmy - &#8377;150</p>
+              
+              <button id="rzp-button5" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+        <div class="card d-flex justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/tata.gif"  class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">Tata - &#8377;100</p>
+              
+              <button id="rzp-button6" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+        <div class="card d-flex justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/cooky.gif" class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">Cooky - &#8377;150</p>
+              
+              <button id="rzp-button7" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+        <div class="card d-flex justify-content-center me-4 mb-4" style="width: 15rem;">
+            <img src="https://www.bt21.com/img/character/bt21/van.gif" class="card-img-top img-fluid" alt="koya">
+            <div class="card-body text-center ">
+              <p class="card-text">Cooky - &#8377;150</p>
+              
+              <button id="rzp-button8" class="btn btn-secondary col-12">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Quick integration-->
+    <!-- <form action="https://www.example.com/payment/success/" method="POST">
+        <script    src="https://checkout.razorpay.com/v1/checkout.js" 
+           data-key="rzp_test_pV4iASNA9zozb7" 
+           data-amount="100" 
+           data-currency="INR"
+           data-order_id=""
+           data-buttontext="buy now"  
+           data-name="Acme Corp"   
+           data-description="A Wild Sheep Chase is the third novel by Japanese author Haruki Murakami"  
+           data-image="https://example.com/your_logo.jpg" 
+           data-prefill.name="Gaurav Kumar"  
+           data-prefill.email="gaurav.kumar@example.com"   
+           data-theme.color="#F37254">
+        </script>
+        <input type="hidden" custom="Hidden Element" name="hidden">
+    </form>  -->
+   <!--Web integration-->
+   
+   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+   <script>
+   var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "10000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "Gaurav Kumar", 
+            "email": "gaurav.kumar@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+    document.getElementById('rzp-button1').onclick = function(e){  
+         rzp1.open();  
+         e.preventDefault();
+     }
+
+
+     var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "15000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "zixing", 
+            "email": "zixing@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp2 = new Razorpay(options);
+    rzp2.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+     document.getElementById('rzp-button2').onclick = function(e){  
+         rzp2.open();  
+         e.preventDefault();
+     }
+
+     var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "10000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "Gaurav Kumar", 
+            "email": "gaurav.kumar@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp3 = new Razorpay(options);
+    rzp3.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+    document.getElementById('rzp-button3').onclick = function(e){  
+         rzp3.open();  
+         e.preventDefault();
+     }
+
+
+     var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "15000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "zixing", 
+            "email": "zixing@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp4 = new Razorpay(options);
+    rzp4.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+     document.getElementById('rzp-button4').onclick = function(e){  
+         rzp4.open();  
+         e.preventDefault();
+        }
+
+        var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "15000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "zixing", 
+            "email": "zixing@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp5 = new Razorpay(options);
+    rzp5.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+     document.getElementById('rzp-button5').onclick = function(e){  
+         rzp5.open();  
+         e.preventDefault();
+        }
+
+        var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "10000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "Gaurav Kumar", 
+            "email": "gaurav.kumar@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp6 = new Razorpay(options);
+    rzp6.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+    document.getElementById('rzp-button6').onclick = function(e){  
+         rzp6.open();  
+         e.preventDefault();
+     }
+
+
+     var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "15000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "zixing", 
+            "email": "zixing@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp7 = new Razorpay(options);
+    rzp7.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+     document.getElementById('rzp-button7').onclick = function(e){  
+         rzp7.open();  
+         e.preventDefault();
+        }
+
+        var options = {  
+         "key": "rzp_test_pV4iASNA9zozb7", 
+         "amount": "15000", 
+         "currency": "INR",
+         "name": "Weverse Shop", 
+         "description": "Test Transaction",  
+         "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Weverse_(app)_logo.png/220px-Weverse_(app)_logo.png",  
+         "order_id": "", 
+         "handler": function (response){ 
+             alert(response.razorpay_payment_id); 
+             alert(response.razorpay_order_id); 
+             alert(response.razorpay_signature)  
+        },   
+         "prefill": {  
+             "name": "zixing", 
+            "email": "zixing@example.com",  
+             "contact": "9999999999"  
+          }, 
+         "notes": {  "address": "Razorpay Corporate Office"    },
+        "theme": { "color": "rgb(13, 235, 179)" }
+    };
+    var rzp8 = new Razorpay(options);
+    rzp8.on('payment.failed', function (response){  
+        alert(response.error.code);      
+        alert(response.error.description);   
+        alert(response.error.source);   
+        alert(response.error.step);  
+        alert(response.error.reason);    
+        alert(response.error.metadata.order_id); 
+        alert(response.error.metadata.payment_id);
+    });
+     document.getElementById('rzp-button8').onclick = function(e){  
+         rzp8.open();  
+         e.preventDefault();
+        }
+     </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+.page{
+    text-align: center;
+    color:rgb(45, 14, 94);
+    font-style: oblique;
+    text-transform: uppercase;
+    background: linear-gradient(60deg,rgb(218, 232, 252),rgb(18, 105, 255));
+
+}
+a:hover{
+    color:rgb(32, 54, 41);
+
+}
+a{
+    color: rgb(253, 244, 244);
+}
+.container {
+    border:5px solid black;
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}

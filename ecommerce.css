@@ -1,0 +1,24 @@
+a{
+    font-family: cursive;
+    color:rgb(13, 235, 179);
+    font-size: large;
+    text-decoration: none;
+}
+.bgnav{
+    background-color: rgb(236, 230, 230);
+    opacity:0.5;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+p{
+    font-family: sans-serif;
+}
+
+#navimg{
+    height: 30px;
+}
+.card{
+    box-shadow: 0 0 5px grey;
+}
